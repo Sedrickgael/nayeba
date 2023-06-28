@@ -1,0 +1,203 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<!-- News, Events, About -->
+<div class="block">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <section class="news-small" id="news-small">
+                    <header>
+                            <h2>Informations</h2>
+                    </header>
+                    <div class="section-content">
+                        <article>
+                            <figure class="date"><i class="fa fa-file-o"></i>26-06-2023</figure>
+                            <header><a href="#">Ouverture des inscription de la rentrée universitaire 2023-2024</a></header>
+                        </article><!-- /article -->
+                        <article>
+                            <figure class="date"><i class="fa fa-file-o"></i>03-03-2023</figure>
+                            <header><a href="#">Les dates de l'examens du brevet de technicien connue</a></header>
+                        </article><!-- /article -->
+                        <article>
+                            <figure class="date"><i class="fa fa-file-o"></i>10-12-2022</figure>
+                            <header><a href="#">Congés de fin d'année</a></header>
+                        </article><!-- /article -->
+                    </div><!-- /.section-content -->
+                    <a href="#" class="read-more stick-to-bottom">Toutes les infos</a>
+                </section><!-- /.news-small -->
+            </div><!-- /.col-md-4 -->
+            <div class="col-md-4 col-sm-6">
+                <section class="events small" id="events-small">
+                    <header>
+                        <h2>Evènements</h2>
+                        <a href="#" class="link-calendar">Calendrier</a>
+                    </header>
+                    <div class="section-content">
+                        <article class="event nearest">
+                            <figure class="date">
+                                <div class="month">jul</div>
+                                <div class="day">18</div>
+                            </figure>
+                            <aside>
+                                <header>
+                                    <a href="event-detail.html">Visite du Ministre de l'Enseignement Supérieur</a>
+                                </header>
+                                <div class="additional-info">Groupe Nayeba</div>
+                            </aside>
+                        </article><!-- /article -->
+                        <article class="event nearest-second">
+                            <figure class="date">
+                                <div class="month">Jul</div>
+                                <div class="day">11</div>
+                            </figure>
+                            <aside>
+                                <header>
+                                    <a href="event-detail.html">Journée porter ouverte et mini salon de l'orientation</a>
+                                </header>
+                                <div class="additional-info clearfix" >Groupe Nayeba</div>
+                            </aside>
+                        </article><!-- /article -->
+                        <article class="event">
+                            <figure class="date">
+                                <div class="month">mar</div>
+                                <div class="day">23</div>
+                            </figure>
+                            <aside>
+                                <header>
+                                    <a href="event-detail.html">Lancement des sessions pratiques et visites en entreprise</a>
+                                </header>
+                                <div class="additional-info">UNID</div>
+                            </aside>
+                        </article><!-- /article -->
+                    </div><!-- /.section-content -->
+                </section><!-- /.events-small -->
+            </div><!-- /.col-md-4 -->
+            <div class="col-md-4 col-sm-12">
+                <section id="about">
+                    <header>
+                        <h2>A-propos de Nayeba</h2>
+                    </header>
+                    <div class="section-content">
+                        <img src="{% static 'assets/img/students.jpg' %}" alt="" class="add-margin">
+                        <p><strong>Bienvenu(e) à Nayeba.</strong> NAYEBA regroupe deux entités, <br>
+                            L’École Supérieure Nayeba de Dabou (ESN) est spécialisée dans la formation au cycle BTS (Brevet de Technicien Supérieur), dans des filières tertiaires et industrielles, avec pour credo de Former autrement.
+                            <br>
+                            L’Université Nayeba Internationale de Dabou (UNID) est une institution universitaire formant aux disciplines en lien avec l’Économie, les Sciences Economiques et les Affaires. </p>
+                        <br>
+                        <a href="{% url 'about' %}" class="read-more stick-to-bottom">Lire la suite</a>
+                    </div><!-- /.section-content -->
+                </section><!-- /.about -->
+            </div><!-- /.col-md-4 -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</div>
+<!-- end News, Events, About -->
+
+<!-- Testimonial -->
+<section id="testimonials">
+    <div class="block">
+        <div class="container">
+            <div class="author-carousel">
+                <div class="author">
+                    <blockquote>
+                        <figure class="author-picture"><img src="{% static 'assets/img/student-testimonial.jpg' %}" alt=""></figure>
+                        <article class="paragraph-wrapper">
+                            <div class="inner">
+                                <header>Le groupe Nayeba est une excellente université. J'ai eu la chance d'intégrer cette Université qui m'a apporté énormement dan smon aprentissage et mon orientation professionnelle!</header>
+                                <footer>XXXX XXXX</footer>
+                            </div>
+                        </article>
+                    </blockquote>
+                </div><!-- /.author -->
+                <div class="author">
+                    <blockquote>
+                        <figure class="author-picture"><img src="{% static 'assets/img/student-testimonial.jpg' %}" alt=""></figure>
+                        <article class="paragraph-wrapper">
+                            <div class="inner">
+                                <header>Belle fut mon expérience dans cette établissement supérieur qui à poser les pières de celui que je suis aujourd'hui.</header>
+                                <footer>xxxx xxxxxx</footer>
+                            </div>
+                        </article>
+                    </blockquote>
+                </div><!-- /.author -->
+            </div><!-- /.author-carousel -->
+        </div><!-- /.container -->
+    </div><!-- /.block -->
+</section>
+<!-- end Testimonial -->
+
+<!-- Our Professors, Gallery -->
+<div class="block">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-4">
+                <section id="our-professors">
+                    <header>
+                        <h2>Our Professors</h2>
+                    </header>
+                    <div class="section-content">
+                        <div class="professors">
+                            <article class="professor-thumbnail">
+                                <figure class="professor-image"><a href="member-detail.html"><img src="{% static 'assets/img/professor.jpg' %}" alt=""></a></figure>
+                                <aside>
+                                    <header>
+                                        <a href="member-detail.html">Prof. Mathew Davis</a>
+                                        <div class="divider"></div>
+                                        <figure class="professor-description">Applied Science and Engineering</figure>
+                                    </header>
+                                    <a href="member-detail.html" class="show-profile">Show Profile</a>
+                                </aside>
+                            </article><!-- /.professor-thumbnail -->
+                            <article class="professor-thumbnail">
+                                <figure class="professor-image"><a href="member-detail.html"><img src="{% static 'assets/img/professor-02.jpg' %}" alt=""></a></figure>
+                                <aside>
+                                    <header>
+                                        <a href="member-detail.html">Prof. Jane Stairway</a>
+                                        <div class="divider"></div>
+                                        <figure class="professor-description">Applied Science and Engineering</figure>
+                                    </header>
+                                    <a href="member-detail.html" class="show-profile">Show Profile</a>
+                                </aside>
+                            </article><!-- /.professor-thumbnail -->
+                            <a href="#" class="read-more stick-to-bottom">All Professors</a>
+                        </div><!-- /.professors -->
+                    </div><!-- /.section-content -->
+                </section><!-- /.our-professors -->
+            </div><!-- /.col-md-4 -->
+
+            <div class="col-md-8 col-sm-8">
+                <section id="gallery">
+                    <header>
+                        <h2>Gallery</h2>
+                    </header>
+                    <div class="section-content">
+                        <ul class="gallery-list">
+                            <li><a href="assets/img/gallery-big-image.jpg' %}" class="image-popup"><img src="{% static 'assets/img/image-01.jpg' %}" alt=""></a></li>
+                            <li><a href="assets/img/gallery-big-image.jpg' %}" class="image-popup"><img src="{% static 'assets/img/image-02.jpg' %}" alt=""></a></li>
+                            <li><a href="assets/img/gallery-big-image.jpg' %}" class="image-popup"><img src="{% static 'assets/img/image-03.jpg' %}" alt=""></a></li>
+                            <li><a href="assets/img/gallery-big-image.jpg' %}" class="image-popup"><img src="{% static 'assets/img/image-04.jpg' %}" alt=""></a></li>
+                            <li><a href="assets/img/gallery-big-image.jpg' %}" class="image-popup"><img src="{% static 'assets/img/image-05.jpg' %}" alt=""></a></li>
+                            <li><a href="assets/img/gallery-big-image.jpg' %}" class="image-popup"><img src="{% static 'assets/img/image-06.jpg' %}" alt=""></a></li>
+                            <li><a href="assets/img/gallery-big-image.jpg' %}" class="image-popup"><img src="{% static 'assets/img/image-07.jpg' %}" alt=""></a></li>
+                            <li><a href="assets/img/gallery-big-image.jpg' %}" class="image-popup"><img src="{% static 'assets/img/image-08.jpg' %}" alt=""></a></li>
+                            <li><a href="assets/img/gallery-big-image.jpg' %}" class="image-popup"><img src="{% static 'assets/img/image-09.jpg' %}" alt=""></a></li>
+                            <li><a href="assets/img/gallery-big-image.jpg' %}" class="image-popup"><img src="{% static 'assets/img/image-10.jpg' %}" alt=""></a></li>
+                            <li><a href="assets/img/gallery-big-image.jpg' %}" class="image-popup"><img src="{% static 'assets/img/image-11.jpg' %}" alt=""></a></li>
+                            <li><a href="assets/img/gallery-big-image.jpg' %}" class="image-popup"><img src="{% static 'assets/img/image-12.jpg' %}" alt=""></a></li>
+                            <li><a href="assets/img/gallery-big-image.jpg' %}" class="image-popup"><img src="{% static 'assets/img/image-13.jpg' %}" alt=""></a></li>
+                            <li><a href="assets/img/gallery-big-image.jpg' %}" class="image-popup"><img src="{% static 'assets/img/image-14.jpg' %}" alt=""></a></li>
+                        </ul>
+                        <a href="#" class="read-more">Go to Gallery</a>
+                    </div><!-- /.section-content -->
+                </section><!-- /.gallery -->
+            </div><!-- /.col-md-4 -->
+
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</div>
+<!-- end Our Professors, Gallery -->
+
+{% endblock content %}
+

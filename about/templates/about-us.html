@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<!-- Breadcrumb -->
+<div class="container">
+    <ol class="breadcrumb">
+        <li><a href="{% url 'index' %}">Accueil</a></li>
+        <li class="active">A-propos</li>
+    </ol>
+</div>
+
+<div class="container">
+    <div class="row">
+        <!--MAIN Content-->
+        <div class="col-md-8">
+            <div id="page-main">
+                <section id="about">
+                    <header><h1>NAYEBA</h1></header>
+                    <img src="assets/img/about-us-head-img.jpg">
+                    <h2>ESN</h2>
+                    <p>
+                    L’École Supérieure Nayeba de Dabou (ESN) est spécialisée dans la formation au cycle BTS (Brevet de Technicien Supérieur), dans des filières tertiaires et industrielles, avec pour credo de Former autrement.
+
+                    Ouverte en 2020, l’ESN propose une offre de formation accessible et actuelle collant aux réalités et aux exigences du monde du travail.
+
+                    La formation de Techniciens supérieurs compétents et à l’esprit novateur, à la fois ambitieux et soucieux d’impacter leur environnement, est un défi majeur que l’’Equipe de l’ESN s’emploie à relever au quotidien.
+
+                    Les contenus des diverses filières ont été élaborés par un Comité d’enseignants hautement qualifiés et justifiant d’une solide expérience professionnelle dans les différentes filières.
+                    </p>
+                    <p>
+                    Ouverte en 2020, l’ESN propose une offre de formation accessible et actuelle collant aux réalités et aux exigences du monde du travail.
+                    La formation de Techniciens supérieurs compétents et à l’esprit novateur, à la fois ambitieux et soucieux d’impacter leur environnement, est un défi majeur que l’’Equipe de l’ESN s’emploie à relever au quotidien.
+
+                    Les contenus des diverses filières ont été élaborés par un Comité d’enseignants hautement qualifiés et justifiant d’une solide expérience professionnelle dans les différentes filières.
+                    </p>
+                    <p>
+                    La formation de Techniciens supérieurs compétents et à l’esprit novateur, à la fois ambitieux et soucieux d’impacter leur environnement, est un défi majeur que l’’Equipe de l’ESN s’emploie à relever au quotidien.
+                    Les contenus des diverses filières ont été élaborés par un Comité d’enseignants hautement qualifiés et justifiant d’une solide expérience professionnelle dans les différentes filières.
+                    </p>
+                    <h2>UNID</h2>
+                    <p>
+                        L’Université Nayeba Internationale de Dabou (UNID) est une institution universitaire formant aux disciplines en lien avec l’Économie, les Sciences Economiques et les Affaires.
+                    </p>
+                    <p>
+                        Les formations suivent les cycles de Licence et de Master, avec une ouverture sur l’entrepreneuriat, l’employabilité, l’innovation et la compétitivité.
+                    </p>
+                    <p>
+                        La vision de l’UNID, axée sur l’idée de Former autrement, se manifeste à tous les niveaux de formation, d’encadrement et d’accompagnement des jeunes diplômés.
+                    </p>
+                    <h2>Gallery</h2>
+                    <div>
+                        <ul class="gallery-list">
+                            <li><a href="assets/img/gallery-big-image.jpg' %}" class="image-popup"><img src="{% static 'assets/img/image-01.jpg' %}" alt=""></a></li>
+                            <li><a href="assets/img/gallery-big-image.jpg' %}" class="image-popup"><img src="{% static 'assets/img/image-02.jpg' %}" alt=""></a></li>
+                            <li><a href="assets/img/gallery-big-image.jpg' %}" class="image-popup"><img src="{% static 'assets/img/image-03.jpg' %}" alt=""></a></li>
+                            <li><a href="assets/img/gallery-big-image.jpg' %}" class="image-popup"><img src="{% static 'assets/img/image-04.jpg' %}" alt=""></a></li>
+                            <li><a href="assets/img/gallery-big-image.jpg' %}" class="image-popup"><img src="{% static 'assets/img/image-05.jpg' %}" alt=""></a></li>
+                            <li><a href="assets/img/gallery-big-image.jpg' %}" class="image-popup"><img src="{% static 'assets/img/image-06.jpg' %}" alt=""></a></li>
+                            <li><a href="assets/img/gallery-big-image.jpg' %}" class="image-popup"><img src="{% static 'assets/img/image-07.jpg' %}" alt=""></a></li>
+                            <li><a href="assets/img/gallery-big-image.jpg' %}" class="image-popup"><img src="{% static 'assets/img/image-08.jpg' %}" alt=""></a></li>
+                            <li><a href="assets/img/gallery-big-image.jpg' %}" class="image-popup"><img src="{% static 'assets/img/image-09.jpg' %}" alt=""></a></li>
+                            <li><a href="assets/img/gallery-big-image.jpg' %}" class="image-popup"><img src="{% static 'assets/img/image-10.jpg' %}" alt=""></a></li>
+                            <li><a href="assets/img/gallery-big-image.jpg' %}" class="image-popup"><img src="{% static 'assets/img/image-11.jpg' %}" alt=""></a></li>
+                            <li><a href="assets/img/gallery-big-image.jpg' %}" class="image-popup"><img src="{% static 'assets/img/image-12.jpg' %}" alt=""></a></li>
+                            <li><a href="assets/img/gallery-big-image.jpg' %}" class="image-popup"><img src="{% static 'assets/img/image-13.jpg' %}" alt=""></a></li>
+                            <li><a href="assets/img/gallery-big-image.jpg' %}" class="image-popup"><img src="{% static 'assets/img/image-14.jpg' %}" alt=""></a></li>
+                        </ul>
+                        <a href="#" class="read-more">Go to Gallery</a>
+                    </div><!-- /.section-content -->
+
+                </section>
+            </div><!-- /#page-main -->
+        </div><!-- /.col-md-8 -->
+
+        <!--SIDEBAR Content-->
+        <div class="col-md-4">
+            <div id="page-sidebar" class="sidebar">
+                <aside class="news-small" id="news-small">
+                        <header>
+                                <h2>Informations</h2>
+                        </header>
+                        <div class="section-content">
+                            <article>
+                                <figure class="date"><i class="fa fa-file-o"></i>26-06-2023</figure>
+                                <header><a href="#">Ouverture des inscription de la rentrée universitaire 2023-2024</a></header>
+                            </article><!-- /article -->
+                            <article>
+                                <figure class="date"><i class="fa fa-file-o"></i>03-03-2023</figure>
+                                <header><a href="#">Les dates de l'examens du brevet de technicien connue</a></header>
+                            </article><!-- /article -->
+                            <article>
+                                <figure class="date"><i class="fa fa-file-o"></i>10-12-2022</figure>
+                                <header><a href="#">Congés de fin d'année</a></header>
+                            </article><!-- /article -->
+                            <a href="#" class="read-more">Toutes les infos</a>
+                        </div><!-- /.section-content -->
+                </aside><!-- /.news-small -->
+
+                <aside id="newsletter">
+                    <header>
+                        <h2>Newsletter</h2>
+                        <div class="section-content">
+                            <div class="newsletter">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="e-mail">
+                                <span class="input-group-btn">
+                                    <button type="submit" class="btn"><i class="fa fa-angle-right"></i></button>
+                                </span>
+                                </div><!-- /input-group -->
+                            </div><!-- /.newsletter -->
+                            <p class="opacity-50">Abonnez-vous pour ne rien manquer sur le groupe Nayeba
+                            </p>
+                        </div><!-- /.section-content -->
+                    </header>
+                </aside><!-- /.newsletter -->
+            </div><!-- /#sidebar -->
+        </div><!-- /.col-md-4 -->
+    </div><!-- /.row -->
+</div><!-- /.container -->
+
+{% endblock content %}

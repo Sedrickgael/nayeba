@@ -1,0 +1,301 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<!-- Mirrored from www.themestarz.net/html/universo/index2.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Jun 2023 14:21:46 GMT -->
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Theme Starz">
+
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href="{% static 'assets/css/font-awesome.css' %}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'assets/css/selectize.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'assets/css/vanillabox/vanillabox.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'assets/css/vanillabox/vanillabox.css' %}" type="text/css">
+
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}" type="text/css">
+
+    <title>Universo - Educational, Course and University Template</title>
+
+</head>
+
+<body class="page-homepage-carousel">
+<!-- Wrapper -->
+<div class="wrapper">
+<!-- Header -->
+<div class="navigation-wrapper">
+    <div class="secondary-navigation-wrapper">
+        <div class="container">
+            <div class="navigation-contact pull-left">Appelez-Nous:  <span class="opacity-70">+225 01 03 12 35 35 </span></div>
+            <div class="navigation-contact pull-left">&nbsp; E-mail:  <span class="opacity-70">contact@nayeba.net </span></div>
+            <div class="search">
+                <div class="input-group">
+                    <input type="search" class="form-control" name="search" placeholder="Search">
+                    <span class="input-group-btn"><button type="submit" id="search-submit" class="btn"><i class="fa fa-search"></i></button></span>
+                </div><!-- /.input-group -->
+            </div>
+            <ul class="secondary-navigation list-unstyled">
+                <li><a href="#">Procédure d'inscription</a></li>
+                <li><a href="#">Résidence Universitaire</a></li>
+                <li><a href="#">Stage professionnel</a></li>
+                <li><a href="#">Pratiques</a></li>
+            </ul>
+        </div>
+    </div><!-- /.secondary-navigation -->
+    <div class="primary-navigation-wrapper">
+        <header class="navbar" id="top" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="navbar-brand nav" id="brand">
+                        <a href="index.html"><img width="200"  src="{% static 'assets/img/logo.png' %}" alt="brand"></a>
+                    </div>
+                </div>
+                <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="{% url 'index' %}"><i style="font-size:3em!important" class="fa fa-home"></i></a>
+                        </li>
+                        <li>
+                            <a href="{% url 'about' %}">Présentation</a>
+                        </li>
+                        <li>
+                            <a href="#" class=" has-child no-link">Espace écoles</a>
+                            <ul class="list-unstyled child-navigation">
+                                <li><a href="{% url 'esn' %}">École Supérieure Nayeba (ESN)</a></li>
+                                <li><a href="{% url 'unid' %}">Université Nayeba International</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="{% url 'formations' %}" class="has-child no-link">Formations</a>
+                            <ul class="list-unstyled child-navigation">
+                                <li><a href="{% url 'bts' %}">Brevet de Technicien Supérieur</a></li>
+                                <li><a href="{% url 'licence' %}">Licence</a></li>
+                                <li><a href="{% url 'master' %}">Master</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="has-child no-link">Résultats</a>
+                            <ul class="list-unstyled child-navigation">
+                                <li><a href="#">Résultat de fin d'année</a></li>
+                                <li><a href="#">Statistiques</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="has-child no-link">Vie Sociale</a>
+                            <ul class="list-unstyled child-navigation">
+                                <li><a href="#">Hébergement étudiant</a></li>
+                                <li><a href="#">Association d'étudiants</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="{% url 'contact' %}">Contact</a>
+                        </li>
+                    </ul>
+                </nav><!-- /.navbar collapse-->
+            </div><!-- /.container -->
+        </header><!-- /.navbar -->
+    </div><!-- /.primary-navigation -->
+    <div class="background">
+        <img src="{% static 'assets/img/background-city.png' %}"  alt="background">
+    </div>
+</div>
+<!-- end Header -->
+
+<!-- Page Content -->
+<div id="page-content">
+    <!-- Slider -->
+    <div id="homepage-carousel">
+        <div class="container">
+            <div class="homepage-carousel-wrapper">
+                <div class="row">
+                    <div class="col-md-6 col-sm-7">
+                        <div class="image-carousel">
+                            <div class="image-carousel-slide"><img src="{% static 'assets/img/slide-1.jpg' %}" alt=""></div>
+                            <div class="image-carousel-slide"><img src="{% static 'assets/img/slide-2.jpg' %}" alt=""></div>
+                            <div class="image-carousel-slide"><img src="{% static 'assets/img/slide-3.jpg' %}" alt=""></div>
+                        </div><!-- /.slider-image -->
+                    </div><!-- /.col-md-6 -->
+                    <div class="col-md-6 col-sm-5">
+                        <div class="slider-content">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h1>Rejoignez l'élité</h1>
+                                    <form id="slider-form" role="form" action="#" method="post">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="input-group">
+                                                    <input class="form-control has-dark-background" name="slider-name" id="slider-name" placeholder="Nom complet" type="text" required>
+                                                </div>
+                                            </div><!-- /.col-md-6 -->
+                                            <div class="col-md-6">
+                                                <div class="input-group">
+                                                    <input class="form-control has-dark-background" name="slider-email" id="slider-email" placeholder="Email" type="email" required>
+                                                </div>
+                                            </div><!-- /.col-md-6 -->
+                                        </div><!-- /.row -->
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="input-group">
+                                                    <select name="slider-study-level" id="slider-study-level" class="has-dark-background">
+                                                        <option value="- Not selected -">Niveau d'étude</option>
+                                                        <option value="Beginner">BAC</option>
+                                                        <option value="Advanced">1 ère année BTS</option>
+                                                        <option value="Advanced">2 ème année BTS</option>
+                                                        <option value="Advanced">Licence 1</option>
+                                                        <option value="Intermediate">Licence 2</option>
+                                                        <option value="Professional">Licence 3</option>
+                                                        <option value="Professional">Master 1</option>
+                                                    </select>
+                                                </div><!-- /.form-group -->
+                                            </div><!-- /.col-md-6 -->
+                                            <div class="col-md-6">
+                                                <div class="input-group">
+                                                    <select name="slider-course" id="slider-course" class="has-dark-background">
+                                                        <option value="- Not selected -">Filière actuelle/souhaitée</option>
+                                                        <option value="Art and Design">Sciences Econmiques et Gestion</option>
+                                                        <option value="Marketing">Sciences de l'information et de la communication</option>
+                                                        <option value="Science">Administration des affaires</option>
+                                                        <option value="History and Psychology"></option>
+                                                    </select>
+                                                </div><!-- /.form-group -->
+                                            </div><!-- /.col-md-6 -->
+                                        </div><!-- /.row -->
+                                        <button type="submit" id="slider-submit" class="btn btn-framed pull-right">Soumettre</button>
+                                        <div id="form-status"></div>
+                                    </form>
+                                </div><!-- /.col-md-12 -->
+                            </div><!-- /.row -->
+                        </div><!-- /.slider-content -->
+                    </div><!-- /.col-md-6 -->
+                </div><!-- /.row -->
+                <div class="background"></div>
+            </div><!-- /.slider-wrapper -->
+            <div class="slider-inner"></div>
+        </div><!-- /.container -->
+    </div>
+    <!-- end Slider -->
+    {% block content %}
+
+    {% endblock content %}
+</div>
+<!-- end Page Content -->
+<!-- Footer -->
+<footer id="page-footer">
+    <section id="footer-top">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-social">
+                    <figure>Follow us:</figure>
+                    <div class="icons">
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                        <a href="#"><i class="fa fa-youtube-play"></i></a>
+                    </div><!-- /.icons -->
+                </div><!-- /.social -->
+                <div class="search pull-right">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    <span class="input-group-btn">
+                        <button type="submit" class="btn"><i class="fa fa-search"></i></button>
+                    </span>
+                    </div><!-- /input-group -->
+                </div><!-- /.pull-right -->
+            </div><!-- /.footer-inner -->
+        </div><!-- /.container -->
+    </section><!-- /#footer-top -->
+
+    <section id="footer-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-12">
+                    <aside class="logo">
+                        <img src="{% static 'assets/img/logo.png' %}" class="vertical-center">
+                    </aside>
+                </div><!-- /.col-md-3 -->
+                <div class="col-md-3 col-sm-4">
+                    <aside>
+                        <header><h4>Contact</h4></header>
+                        <address>
+                            <strong>NAYEBA</strong>
+                            <br>
+                            <span>Dabou</span>
+                            <br><br>
+                            <span>Dabou Côte d'Ivoire</span>
+                            <br>
+                            <abbr title="Telephone">Telephone:</abbr> +225 01 03 12 35 35
+                            <br>
+                            <abbr title="Email">Email:</abbr> <a href="#">contact@nayeba.net</a>
+                        </address>
+                    </aside>
+                </div><!-- /.col-md-3 -->
+                <div class="col-md-3 col-sm-4">
+                    <aside>
+                        <header><h4>Liens Utiles</h4></header>
+                        <ul class="list-links">
+                            <li><a href="#">Politique de confidentialité</a></li>
+                            <li><a href="#">Alumni</a></li>
+                            <li><a href="{% url 'contact' %}">Contact</a></li>
+                            <li><a href="{% url 'about' %}">A-propos</a></li>
+                        </ul>
+                    </aside>
+                </div><!-- /.col-md-3 -->
+                <div class="col-md-3 col-sm-4">
+                    <aside>
+                        <header><h4>A-propos de NAYEBA</h4></header>
+                        <p>NAYEBA regroupe deux entités, <br>
+                            L’École Supérieure Nayeba de Dabou (ESN) est spécialisée dans la formation au cycle BTS (Brevet de Technicien Supérieur), dans des filières tertiaires et industrielles, avec pour credo de Former autrement.
+                            <br>
+                            L’Université Nayeba Internationale de Dabou (UNID) est une institution universitaire formant aux disciplines en lien avec l’Économie, les Sciences Economiques et les Affaires.
+                        </p>
+                        <div>
+                            <a href="" class="read-more">All News</a>
+                        </div>
+                    </aside>
+                </div><!-- /.col-md-3 -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+        <div class="background"><img src="{% static 'assets/img/background-city.png' %}" class="" alt=""></div>
+    </section><!-- /#footer-content -->
+
+    <section id="footer-bottom">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="copyright">© Theme Starz, All rights reserved</div><!-- /.copyright -->
+            </div><!-- /.footer-inner -->
+        </div><!-- /.container -->
+    </section><!-- /#footer-bottom -->
+
+</footer>
+<!-- end Footer -->
+
+</div>
+<!-- end Wrapper -->
+
+<script type="text/javascript" src="{% static 'assets/js/jquery-2.1.0.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'assets/js/jquery-migrate-1.2.1.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'assets/js/selectize.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'assets/js/jquery.validate.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'assets/js/jquery.placeholder.js' %}"></script>
+<script type="text/javascript" src="{% static 'assets/js/jQuery.equalHeights.js' %}"></script>
+<script type="text/javascript" src="{% static 'assets/js/icheck.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'assets/js/jquery.vanillabox-0.1.5.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'assetss/js/retina-1.1.0.min.html' %}"></script>
+
+<script type="text/javascript" src="{% static 'assets/js/custom.js' %}"></script>
+
+</body>
+
+</html>
